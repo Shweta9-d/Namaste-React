@@ -1,0 +1,30 @@
+{
+  "name": "ignitingourapp_31_12_2022",
+  "version": "1.0.0",
+  "description": "This is a live course",
+
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shweta-d/namaste-react.git"
+  },
+  "author": "Shweta Dokhe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shweta-d/namaste-react/issues"
+  },
+  "homepage": "https://github.com/Shweta-d/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist":[
+    "last 2 chrome versions"
+  ]
+}
