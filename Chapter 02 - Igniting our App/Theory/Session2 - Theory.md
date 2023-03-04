@@ -53,8 +53,7 @@ npm install -D parcel
 
 ## Q: What is `.parcel-cache`
 A: `.parcel-cache` is used by parcel(bundler) to reduce the building time.
-It stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode.
-
+The `.parcel-cache` folder holds information about your project and is used by Parcel to rebuild your application. When you make changes to your files, Parcel will detect those changes and re-run your build with these files instead of starting from scratch.
 
 ## Q: What is `npx`?
 A: `npx` is a tool that is used to execute the packages. It comes with the npm, when you installed npm above 5.2.0 version then automatically npx will installed. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package.
@@ -162,8 +161,11 @@ Don't push `node_modules`in github because it contains lots of files(more than 1
 
 
 ## Q: What is the `dist` folder?
-A: The /dist folder contains the minimized version of the source code. The code present in the /dist folder is actually the code which is used on production web applications. Along with the minified code, the /dist folder also comprises of all the compiled modules that may or may not be used with other systems.
+A: `dist` folder holds the dynamically generated files that Parcel created for you. Notice that this folder includes your HTML, CSS, and JavaScript files, but are all named index with random characters in between. It also includes .map files. Parcel generates what is called a source map for you when you use the npx parcel command. The source map tells the browser how to locate the original source code from your bundled code. It is used to assist with debugging your code in development and in production
 
+```Note : 
+ Sometimes, when making significant edits to your code, you may notice that those changes aren’t reflected in the browser. If this happens, you can try refreshing the browser. If you’re still having a problem, stop your server from running by pressing CTRL+C in your terminal. Then, delete the .parcel-cache and dist folders. The .parcel-cache folder can potentially hold remnants of old code and by removing it, you can eliminate pain points. After deleting these, run the npx parcel src/index.html command again. This regenerates the '.parcel-cache and dist folders and files with your updated code
+```
 
 ## Q: What is `browserslist`?
 A: Browserslist is a tool that allows specifying which browsers should be supported in your frontend app by specifying "queries" in a config file. It's used by frameworks/libraries such as React, Angular and Vue, but it's not limited to them.
