@@ -60,7 +60,7 @@ A: `npx` is a tool that is used to execute the packages. It comes with the npm, 
 
 
 ## Q: What is difference between `dependencies` vs `devDependencies`?
-A:ependency is an object that contains the library, which your project requires for production environments and functioning effectively. devDependencies are those packages in the package.json file that you need only for project development purposes. Example- Babel, Webpack, etc.
+A:Dependency is an object that contains the library, which your project requires for production environments and functioning effectively. devDependencies are those packages in the package.json file that you need only for project development purposes. Example- Babel, Webpack, etc.
 These packages are necessary only while you are developing your project, not necessary on production.
 To save a dependency as a devDependency on installation we need to do, 
 ```
@@ -164,7 +164,11 @@ Don't push `node_modules`in github because it contains lots of files(more than 1
 A: `dist` folder holds the dynamically generated files that Parcel created for you. Notice that this folder includes your HTML, CSS, and JavaScript files, but are all named index with random characters in between. It also includes .map files. Parcel generates what is called a source map for you when you use the npx parcel command. The source map tells the browser how to locate the original source code from your bundled code. It is used to assist with debugging your code in development and in production
 
 ```Note : 
- Sometimes, when making significant edits to your code, you may notice that those changes aren’t reflected in the browser. If this happens, you can try refreshing the browser. If you’re still having a problem, stop your server from running by pressing CTRL+C in your terminal. Then, delete the .parcel-cache and dist folders. The .parcel-cache folder can potentially hold remnants of old code and by removing it, you can eliminate pain points. After deleting these, run the npx parcel src/index.html command again. This regenerates the '.parcel-cache and dist folders and files with your updated code
+ Sometimes, when making significant edits to your code, you may notice that those changes aren’t reflected in the browser. 
+ If this happens, you can try refreshing the browser. If you’re still having a problem, stop your server from running by pressing 
+ CTRL+C in your terminal. Then, delete the .parcel-cache and dist folders. The .parcel-cache folder can potentially hold 
+ remnants of old code and by removing it, you can eliminate pain points. After deleting these, run the npx 
+ parcel src/index.html command again. This regenerates the '.parcel-cache and dist folders and files with your updated code
 ```
 
 ## Q: What is `browserslist`?
