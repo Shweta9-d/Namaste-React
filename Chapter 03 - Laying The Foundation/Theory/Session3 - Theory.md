@@ -65,8 +65,19 @@ If the type attribute contains anyother value, then the code is treated as data 
   
    ```
 
-   `{ <TitleComponent /> }` - This value in jsx is meant for rendering a component (i.e) function that return jsx. This is self closing tag.
+   `{ <TitleComponent /> }` -  `{ <TitleComponent /> }` is called a self-closing tag and is a shorthand way of writing `{ <TitleComponent> </TitleComponent> }`. It is used when the component does not have any children.
    
-   `{ <TitleComponent> </TitleComponent> }` - This is same as `{ <TitleComponent /> }` if there are no child inside TitleComponent. If there are children, then those values come inside   `{ <TitleComponent>} ` and `</TitleComponent> }`. 
+   `{ <TitleComponent> </TitleComponent> }` - is used when you want to include children components inside the parent component. In this case, the opening and closing tags are used to define the parent component, and the child component is written within those tags.
+   ```
+   function App() {
+    return (
+    <div>
+      <Component>
+        <ChildComponent />
+      </Component>
+    </div>
+  );
+}
+   ``` 
    
    
