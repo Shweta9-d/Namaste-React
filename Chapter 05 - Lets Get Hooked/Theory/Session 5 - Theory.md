@@ -46,7 +46,7 @@ Import & Export Modules are ES6 features that allows us to write reusable js cod
      In `app.js`, while importing use `import * from MainHeader from './components/Header'` . <MainHeader.Header></MainHeader.Header> is used to render Header Component in AppLayout Component.
 
 
-## 2. What is the importance of config.js file
+## 2. What is the importance of config.js file ?
 
 `config.js` file can be used to store the hardcoded values in one file, so that when the value needs to be modified, it can be easy to do the modification in one file. 
 
