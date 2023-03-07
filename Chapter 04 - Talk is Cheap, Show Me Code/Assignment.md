@@ -5,15 +5,15 @@
 - Is `JSX` mandatory for React?
 - Is `ES6` mandatory for React?
 - `{TitleComponent}` vs `{<TitleComponent/>}` vs `{<TitleComponent></TitleComponent>}` in `JSX`.
-- How can I write comments in JSX?
-- What is <React.Fragment></React.Fragment>?
-- What is Virtual DOM?
-- What is Reconciliation in React?
-- What is React Fibre?
-- Why we need keys in React? When do we need keys in React?
-- Can we use index as keys in React?
-- What is props in React?
-- What is a Config Driven UI?
+- How can I write `comments` in JSX?
+- What is `<React.Fragment></React.Fragment>`?
+- What is `Virtual DOM`?
+- What is `Reconciliation` in React?
+- What is `React Fibre`?
+- Why we need `keys` in React? When do we need keys in React?
+- Can we use `index` as `keys` in React?
+- What is `props` in React?
+- What is a `Config Driven UI`?
 
 
 ## Coding Assignment:
